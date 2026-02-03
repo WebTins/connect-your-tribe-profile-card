@@ -2,13 +2,85 @@
 
 <main class="card">
     <section class="front-card">
-        <header class="header">
-            <img class="profile-pic" src="/Squad1I-Tin.JPG" width="250px">
-            <h1>{{ person.name }}</h1>
-            <h2 class="front-heading">FDND Student / Squad 1i</h2>
-            <p>Hogeschool van Amsterdam</p>
-            <button class="front-flip-button">Naar de achterkant</button>
-        </header>
+        <img class="profile-pic" src="/Squad1I-Tin.JPG" width="250px">
+        <h1>{{ person.name }}</h1>
+        <h2 class="front-heading">FDND Student / Squad 1i</h2>
+        <p>Hogeschool van Amsterdam</p>
+        <button class="front-flip-button">Naar de achterkant</button>
+    </section>
+
+    <section class="back-card">
+        <h3>{{ person.name }}</h3>
+
+        <span class="about-me">
+            <h4>Over mij</h4>
+            <ul class="about-list">
+                <li>
+                   <button class="about-me-button">
+                    <img src="/age-icon.png" width="50px">
+                    21 jaar
+                    </button> 
+                </li>
+                <li>
+                   <button class="about-me-button">
+                    <img src="/location-icon.png" width="50px">
+                    Almere
+                    </button> 
+                </li>
+                <li>
+                   <button class="about-me-button">
+                    <img src="/education-icon.png" width="50px">
+                    MBO 3
+                    </button> 
+                </li>
+                <li>
+                   <button class="about-me-button">
+                    <img src="/education-icon.png" width="50px">
+                    MBO 4
+                    </button> 
+                </li>
+            </ul>
+        </span>
+
+        <span class="hobby">
+            <h4>Hobbies</h4>
+            <ul class="hobby-list">
+                <li>
+                    <button class="hobby-button">
+                    <img src="/gaming-icon.png" width="50px">
+                    21 jaar
+                    </button> 
+                </li>
+                <li>
+                    <button class="hobby-button">
+                    <img src="/fitness-icon.png" width="50px">
+                    Almere
+                    </button> 
+                </li>
+                <li>
+                    <button class="hobby-button">
+                    <img src="/series-icon.png" width="50px">
+                    MBO 3
+                    </button> 
+                </li>
+            </ul>
+        </span>
+
+        <span class="socials">
+            <ul class="socials-list">
+                <li>
+                    <a href="https://www.instagram.com/tin_ng2004"><img src="/instagram-icon.png" width="50px"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/WebTins"><img src="/github-icon.png" width="50px"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/tin-nguyen-33a211202/"><img src="/linkedin-icon.png" width="50px"></a>
+                </li>
+            </ul>
+        </span>
+
+        <button class="back-flip-button">Naar de voorkant</button>
     </section>
 </main>
 
