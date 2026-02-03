@@ -1,10 +1,15 @@
 {% render 'partials/head.liquid' %}
 
-<section class="visitekaartje">
-    <header class="header">
-        <img src="">
-        <h1>{{ person.name }}</h1>
-    </header>
-</section>
+<main class="card">
+    <section class="front-card">
+        <header class="header">
+            <img class="profile-pic" src="/Squad1I-Tin.JPG" width="250px">
+            <h1>{{ person.name }}</h1>
+            <h2 class="front-heading">FDND Student / Squad 1i</h2>
+            <p>Hogeschool van Amsterdam</p>
+            <button class="front-flip-button">Naar de achterkant</button>
+        </header>
+    </section>
+</main>
 
 {% render 'partials/foot.liquid' %}
