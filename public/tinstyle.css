@@ -49,3 +49,63 @@
     font-family: libre;
     src: url(/LibreCaslonText-Regular.ttf);
 }
+
+main {
+    background-color: var(--primary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+
+    .front-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20rem;
+        height: 30rem;
+        padding-top: 2rem;
+        background-color: var(--secondary-background);
+        border-radius: 25px 25px 0px 0px;
+        box-shadow: -8px 8px 10px 0px rgba(0 0 0 / 25%);
+
+        img {
+            top: 16%;
+        }
+        
+        
+        h1 {
+            padding-top: 3rem;
+            padding-bottom: 1rem;
+            font-weight: var(--font-weight-bold);
+        }
+
+        h2 {
+            padding-bottom: 1rem;
+            font-weight: var(--font-weight-medium);
+        }
+
+        p {
+            font-family: libre;
+            color: var(--accent-color);
+            text-decoration: underline;
+            text-underline-offset: -1.5em;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0;
+            justify-self: flex-end;
+            width: 155px;
+            height: 50px;
+            border-radius: 100px 100px 0px 0px;
+            border: none;
+            background-color: var(--accent-color);
+            color: var(--light-accent);
+            font-family: libre;
+            font-weight: var(--font-weight-bold);
+            cursor: pointer;
+        }
+    }
+}
