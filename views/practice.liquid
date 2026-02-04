@@ -3,6 +3,13 @@
 
 <p>Het is vandaag {{ "now" | date: "%H:%M %d-%B-%Y" }}</p>
 <p>Mijn geboortedatum: {{ person.birthdate | date: "%d-%B-%Y"  }}</p>
+<img src="{{ person.avatar }} " width="150px">
+<p>Mijn ethniciteit: {{ person.custom.ethnicity }}</p>
+<p>Mijn religie: {{ person.custom.religion }}</p>
+<p>Mijn favoriete games: {{ person.custom.favourite_games }}</p>
+
+
+
 <details>
     <summary>Data</summary>
     <pre>{{ person | json:4 }}</pre>
