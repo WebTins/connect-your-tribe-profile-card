@@ -92,11 +92,13 @@ body {
                 padding-top: 1rem;
             }
 
-            h2 {
+            .front-heading {
                 font-weight: var(--font-weight-medium);
+                font-size: var(--heading-size-m);
+                color: var(--accent-color);
             }
 
-            p {
+            .school {
                 padding-bottom: 4rem;
                 color: var(--accent-color);
                 text-decoration: underline;
@@ -120,7 +122,7 @@ body {
                 gap: 1rem;
                 transform: rotateY(180deg);
 
-                h3 {
+                h2 {
                     font-size: var(--heading-size-l);
                 }
 
@@ -131,6 +133,15 @@ body {
                     background-color: var(--accent-color);
                     border-radius: 50px 0px 50px 0px;
                     width: 15rem;
+
+                    h3 {
+                        font-size: var(--font-size-m);
+                        color: var(--light-accent);
+                        display: flex;
+                        justify-content: center;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                    }
 
                     h4 {
                         font-size: var(--font-size-m);
