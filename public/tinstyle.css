@@ -70,18 +70,15 @@ body {
         
         
         h1 {
-            padding-top: 3rem;
-            padding-bottom: 1rem;
             font-weight: var(--font-weight-bold);
         }
 
         h2 {
-            padding-bottom: 1rem;
             font-weight: var(--font-weight-medium);
         }
 
         p {
-            font-family: libre;
+            padding-bottom: 4rem;
             color: var(--accent-color);
             text-decoration: underline;
             text-underline-offset: -1.5em;
