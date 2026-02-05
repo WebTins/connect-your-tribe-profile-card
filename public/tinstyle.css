@@ -7,6 +7,8 @@
     h1, h2, h3, h4 {
         color:var(--accent-color);
     }
+
+    height: 100%;
 }
 
 /* Custom properties */
@@ -40,10 +42,6 @@
 }
 
 body {
-
-    height: 100vh;
-    /* overflow: hidden; */
-    
     main {
         background-color: var(--primary-background);
         display: flex;
