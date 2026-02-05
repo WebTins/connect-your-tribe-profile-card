@@ -53,9 +53,9 @@ body {
         padding-top: 5rem;
 
     .front-card {
-        position: relative;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         width: 20rem;
         height: 30rem;
