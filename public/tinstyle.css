@@ -50,6 +50,31 @@ body {
         align-items: center;
         height: 100vh;
 
+        .card {
+            width: 350px;
+            height: 500px;
+            perspective: 1000px;
+
+            &:hover > .inner-card {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .inner-card {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+        }
+
+        .front-card, .back-card {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
         .front-card {
             display: flex;
             flex-direction: column;
@@ -93,6 +118,7 @@ body {
                 border-radius: 25px 25px 0px 0px;
                 box-shadow: -8px 8px 10px 0px rgba(0 0 0 / 25%);
                 gap: 1rem;
+                transform: rotateY(180deg);
 
                 h3 {
                     font-size: var(--heading-size-l);
