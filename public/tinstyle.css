@@ -95,6 +95,131 @@ body {
             cursor: pointer;
         }
     }
+
+    .back-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 20rem;
+            height: 30rem;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
+            background-color: var(--secondary-background);
+            border-radius: 25px 25px 0px 0px;
+            box-shadow: -8px 8px 10px 0px rgba(0 0 0 / 25%);
+            gap: 1rem;
+
+            h3 {
+                font-size: var(--heading-size-l);
+            }
+
+            .about-me, .hobby {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: var(--accent-color);
+                border-radius: 50px 0px 50px 0px;
+                width: 15rem;
+
+                h4 {
+                    font-size: var(--font-size-m);
+                    color: var(--light-accent);
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                .about-list {
+                    display: grid;
+                    justify-content: center;
+                    grid-template-columns: repeat(2, auto);
+                    gap: 1rem;
+                    padding: 0;
+                    padding-bottom: 1rem;
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        color: var(--accent-color);
+                        background-color: var(--light-accent);
+                        border: none;
+                        width: 100%;
+
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+
+                .hobby-list {
+                    display: grid;
+                    grid-template-columns: repeat(1fr, auto);
+                    gap: 0.5rem;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    padding-bottom: 0.5rem;
+
+                    button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50px;
+                        color: var(--accent-color);
+                        background-color: var(--light-accent);
+                        border: none;
+                        width: 100%;
+                        
+                        img {
+                            width: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .socials-list {
+            display: flex;  
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            
+            li {
+                width: 4rem;
+                height: 2.5rem;
+                background-color: var(--accent-color);
+                border-radius: 50px 0 50px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .back-flip-button {
+            width: 155px;
+            height: 50px;
+            border-radius: 100px 100px 0px 0px;
+            border: none;
+            background-color: var(--accent-color);
+            color: var(--light-accent);
             font-weight: var(--font-weight-bold);
             cursor: pointer;
         }
