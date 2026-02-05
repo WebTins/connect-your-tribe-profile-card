@@ -79,7 +79,7 @@ body {
                 padding-bottom: 4rem;
                 color: var(--accent-color);
                 text-decoration: underline;
-                text-underline-offset: -1.5em;
+                text-underline-offset: -2em;
             }
 
             button {
