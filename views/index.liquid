@@ -4,7 +4,7 @@
     <div class="card">
         <div class="inner-card">
             <section class="front-card">
-                <img class="profile-pic" src="/Squad1I-Tin.JPG" width="250px">
+                <img class="profile" src="{{ person.avatar }}" width="250" alt="Foto Tin">
                 <h1>{{ person.name }}</h1>
                 <p class="front-heading">{{ person.custom.front.heading }}</p>
                 <p class="school">{{ person.custom.front.school }}</p>
@@ -18,25 +18,25 @@
                     <ul class="about-list">
                         <li>
                         <button class="about-me-button">
-                            <img src="{{ person.custom.images.age }}" width="50px">
+                            <img src="{{ person.custom.images.age }}" width="50" alt="">
                             {{ person.custom.images_text.age }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="{{ person.custom.images.location }}" width="50px">
+                            <img src="{{ person.custom.images.location }}" width="50" alt="">
                             {{ person.custom.images_text.location }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="{{ person.custom.images.education }}" width="50px">
+                            <img src="{{ person.custom.images.education }}" width="50" alt="">
                             {{ person.custom.images_text.education1 }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="{{ person.custom.images.education }}" width="50px">
+                            <img src="{{ person.custom.images.education }}" width="50" alt="">
                             {{ person.custom.images_text.education2 }}
                             </button> 
                         </li>
@@ -48,38 +48,38 @@
                     <ul class="hobby-list">
                         <li>
                             <button class="hobby-button">
-                            <img src="{{ person.custom.images.gaming }}" width="50px">
+                            <img src="{{ person.custom.images.gaming }}" width="50" alt="">
                             {{ person.custom.images_text.gaming }}
                             </button> 
                         </li>
                         <li>
                             <button class="hobby-button">
-                            <img src="{{ person.custom.images.fitness }}" width="50px">
+                            <img src="{{ person.custom.images.fitness }}" width="50" alt="">
                             {{ person.custom.images_text.fitness }}
                             </button> 
                         </li>
                         <li>
                             <button class="hobby-button">
-                            <img src="{{ person.custom.images.series }}" width="50px">
+                            <img src="{{ person.custom.images.series }}" width="50" alt="">
                             {{ person.custom.images_text.series }}
                             </button> 
                         </li>
                     </ul>
                 </section>
 
-                <span class="socials">
+                <div class="socials">
                     <ul class="socials-list">
                         <li>
-                            <a href="{{person.custom.social_links.instagram}}"><img src="{{ person.custom.images.instagram }}" width="50px"></a>
+                            <a href="{{person.custom.social_links.instagram}}"><img src="{{ person.custom.images.instagram }}" alt="" width="50"></a>
                         </li>
                         <li>
-                            <a href="{{ person.custom.social_links.github }}"><img src="{{ person.custom.images.github }}" width="30px"></a>
+                            <a href="{{ person.custom.social_links.github }}"><img src="{{ person.custom.images.github }}" alt="" width="30"></a>
                         </li>
                         <li>
-                            <a href="{{ person.custom.social_links.linkedin }}"><img src="{{ person.custom.images.linkedin }}" width="50px"></a>
+                            <a href="{{ person.custom.social_links.linkedin }}"><img src="{{ person.custom.images.linkedin }}" alt="" width="50"></a>
                         </li>
                     </ul>
-                </span>
+                </div>
             </section>
         </div>
     </div>
