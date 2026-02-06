@@ -6,62 +6,62 @@
             <section class="front-card">
                 <img class="profile-pic" src="/Squad1I-Tin.JPG" width="250px">
                 <h1>{{ person.name }}</h1>
-                <p class="front-heading">FDND Student / Squad 1i</p>
-                <p class="school">Hogeschool van Amsterdam</p>
+                <p class="front-heading">{{ person.custom.front.heading }}</p>
+                <p class="school">{{ person.custom.front.school }}</p>
             </section>
 
             <section class="back-card">
                 <h2>{{ person.name }}</h2>
 
                 <section class="about-me">
-                    <h3>Over mij</h3>
+                    <h3>{{person.custom.back.about_me}}</h3>
                     <ul class="about-list">
                         <li>
                         <button class="about-me-button">
-                            <img src="/age-icon.png" width="50px">
-                            21 jaar
+                            <img src="{{ person.custom.images.age }}" width="50px">
+                            {{ person.custom.images_text.age }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="/location-icon.png" width="50px">
-                            Almere
+                            <img src="{{ person.custom.images.location }}" width="50px">
+                            {{ person.custom.images_text.location }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="/education-icon.png" width="50px">
-                            MBO 3
+                            <img src="{{ person.custom.images.education }}" width="50px">
+                            {{ person.custom.images_text.education1 }}
                             </button> 
                         </li>
                         <li>
                         <button class="about-me-button">
-                            <img src="/education-icon.png" width="50px">
-                            MBO 4
+                            <img src="{{ person.custom.images.education }}" width="50px">
+                            {{ person.custom.images_text.education2 }}
                             </button> 
                         </li>
                     </ul>
                 </section>
 
                 <section class="hobby">
-                    <h4>Hobbies</h4>
+                    <h4>{{ person.custom.back.hobby }}</h4>
                     <ul class="hobby-list">
                         <li>
                             <button class="hobby-button">
-                            <img src="/gaming-icon.png" width="50px">
-                            Gamen
+                            <img src="{{ person.custom.images.gaming }}" width="50px">
+                            {{ person.custom.images_text.gaming }}
                             </button> 
                         </li>
                         <li>
                             <button class="hobby-button">
-                            <img src="/fitness-icon.png" width="50px">
-                            Fitness
+                            <img src="{{ person.custom.images.fitness }}" width="50px">
+                            {{ person.custom.images_text.fitness }}
                             </button> 
                         </li>
                         <li>
                             <button class="hobby-button">
-                            <img src="/series-icon.png" width="50px">
-                            Series
+                            <img src="{{ person.custom.images.series }}" width="50px">
+                            {{ person.custom.images_text.series }}
                             </button> 
                         </li>
                     </ul>
@@ -70,13 +70,13 @@
                 <span class="socials">
                     <ul class="socials-list">
                         <li>
-                            <a href="https://www.instagram.com/tin_ng2004"><img src="/instagram-icon.png" width="50px"></a>
+                            <a href="{{person.custom.social_links.instagram}}"><img src="/instagram-icon.png" width="50px"></a>
                         </li>
                         <li>
-                            <a href="https://github.com/WebTins"><img src="/github-icon.png" width="30px"></a>
+                            <a href="{{ person.custom.social_links.github }}"><img src="/github-icon.png" width="30px"></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/tin-nguyen-33a211202/"><img src="/linkedin-icon.png" width="50px"></a>
+                            <a href="{{ person.custom.social_links.linkedin }}"><img src="/linkedin-icon.png" width="50px"></a>
                         </li>
                     </ul>
                 </span>
